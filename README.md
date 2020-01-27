@@ -1,2 +1,1 @@
-# sumofdigits
-Sum of Digits in C
+Ackermann's Function
