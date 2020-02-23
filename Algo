@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int ackermannFunc(int a, int b) {
+        if (!a)
+          return a + 1;
+        if (!b)
+          return ackermannFunc(a - 1, 1);
+        return ackermannFunc(a - 1, ackermannFunc(a, b - 1));
+}
+
+int main() {
+        int a, b;
+        for (a = 0; a <= 4; a++)
+                for (b = 0; b < 6 - a; b++)
+                        printf("%d", ackermannFunc(a, b));
+         return 0;
+}
